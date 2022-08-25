@@ -1,5 +1,17 @@
 function arrayMadness(a, b) {
-    // Ready, get set, GO!!!
+    myA = 0;
+    myB = 0;
+    for (var i = 0; i < a.length; i++){
+        myA = myA + a[i]**2;
+    }
+    for (var i = 0; i < b.length; i++){
+        myB = myB + b[i]**3;
+    }
+    if (myA > myB){
+        return true;
+    } else {
+        return false;
+    }
 }
 
 console.log(arrayMadness([4,5,6],[1,2,3])); // true
